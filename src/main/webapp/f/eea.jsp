@@ -40,7 +40,7 @@
 <!-- finn start -->
 
 <div class="pane-content">
-   <h2>European Environment <br> Agency</h2>
+   <h2>European <br> Environment Agency</h2>
 	<div class="figure image mode-full" style="height: 150px; overflow: hidden">
 		<a href="https://www.eea.europa.eu/"><img alt="eea" src="/img/eea.png" style="width: 280px;"></a>
 	</div>

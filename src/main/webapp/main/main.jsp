@@ -116,7 +116,7 @@
 
                 <!-- 광고3개시작 -->
                 <!-- eea [Finn] start -->
-                <div class="row row-b cols-3" style="padding-bottom: 50px">
+                <div class="row row-b cols-3" style="padding-bottom: 50px;">
                     <div class="col">
                         <div class="panel-pane pane-epa-core-html-pane">
                             <jsp:include page="/EeaController" />

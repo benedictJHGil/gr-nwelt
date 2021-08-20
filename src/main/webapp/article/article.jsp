@@ -16,8 +16,8 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   	<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.js"></script>       <!-- DataTable CDN -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous"> <!-- 돋보기아이콘 -->
-    <link rel='shortcut icon' type='image/x-icon' href='http://<%=rootAddress%>/image/favicon.ico'>
-  <link rel="icon" type="image/x-icon" href="http://<%=rootAddress%>/image/favicon.ico">   
+    <link rel='shortcut icon' type='image/x-icon' href='https://<%=rootAddress%>/image/favicon.ico'>
+  <link rel="icon" type="image/x-icon" href="https://<%=rootAddress%>/image/favicon.ico">
 
 <script type="text/javascript" language="javascript">
 
@@ -30,8 +30,8 @@
 		if(placeholder != 'Search') 
 			keyword = placeholder;	//placeholder에 기본값('Search')이외의 다른 값이 들어있을경우: 검색창에 입력한 키워드가 넘어온 것이므로 keyword 최신화
 		console.log(keyword);
-		// var newsApi = 'https://newsapi.org/v2/everything?q="'+ keyword +'"&apiKey=7f7ce0c864644f5bb96923e8e0272104'; //키워드뽑아서 기사가져올수있게할수있는 URL
-		var newsApi = 'https://newsapi.org/v2/everything?q=global%20warming&apiKey=7f7ce0c864644f5bb96923e8e0272104'; //키워드뽑아서 기사가져올수있게할수있는 URL
+		var newsApi = 'https://newsapi.org/v2/everything?q="'+ keyword +'"&apiKey=7f7ce0c864644f5bb96923e8e0272104'; //키워드뽑아서 기사가져올수있게할수있는 URL
+		// var newsApi = 'https://newsapi.org/v2/everything?q=global%20warming&apiKey=7f7ce0c864644f5bb96923e8e0272104'; //키워드뽑아서 기사가져올수있게할수있는 URL
 		var articles;
         ajaxExecute(); //
 		
@@ -39,7 +39,7 @@
     	$("#newsSearch").click(function(){
     		  keyword = $('#searchInput').val(); //키워드에 검색한 input에 적은 값 넣기 
     		  console.log(keyword); // 키워드 출력해보기
-    		  var newUrl = "http://" + rootAddress + "/ArticleBoardController"; // main page에서 더보기를 클릭시 3개뿐아닌 나머지도 불러오기위한 컨트롤러 처리 주소
+    		  var newUrl = "https://" + rootAddress + "/ArticleBoardController"; // main page에서 더보기를 클릭시 3개뿐아닌 나머지도 불러오기위한 컨트롤러 처리 주소
     		  newUrl += '?keyword="' + keyword + '"'; //검색한 키워드를 같이 받아서 가져가기위한 키워드 전달
     		  console.log(newUrl); //주소가 전달이 잘되었는지 확인위해 출력해보기
     		  window.location.href=newUrl; //메인에서 article페이지로 more클릭하여 API불러왔을때 키워드를 같이 들고와서 보여주는데 키워드 들고간 페이지에서 다시 검색시 이전값이 존재하므로 새로고침을 해주어 초기화?시키는작업

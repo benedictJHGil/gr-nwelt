@@ -3,8 +3,8 @@
 <%-- Include this file to obtain server's root address wherever using ajax!! --%>
 <%@ include file="../rootAddress.jsp" %>
 <%-----------------------------------------------------------------------------%>
-<script src="/webjars/jquery/3.5.1/dist/jquery.min.js"></script>
-<script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=2um8xr8ytg&callback=initMap"></script>
+<script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=h6x7kaphse&callback=initMap"></script>
+<%--<script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=2um8xr8ytg&callback=initMap"></script>--%>
 <script type="text/javascript" src="../s/greenCompanies.json"></script>
 <script type="text/javascript">
 	var map = null;

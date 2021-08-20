@@ -1,7 +1,5 @@
 package eea.controller;
 
-import com.google.gson.Gson;
-
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;

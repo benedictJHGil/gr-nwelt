@@ -6,27 +6,21 @@
 <html lang="en">
 <head>
     <title>GRÜNWELT</title>
-    <%--<meta charset="utf-8">--%>
-    <%--<meta name="viewport" content="width=device-width, initial-scale=1">--%>
-    <%--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">--%>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
-    <%--<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"--%>
-    <%--      integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">--%>
-    <%--<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">--%>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+          integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
 
-    <script src="/webjars/jquery/3.5.1/dist/jquery.min.js"></script>
-    <script src="/webjars/bootstrap/4.5.2/dist/js/bootstrap.min.js"></script>
-    <%--<script src="/webjars/popper.js/1.16.0/dist/umd/popper.min.js"></script>--%>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
 
-    <link rel="stylesheet" href="/webjars/bootstrap/4.5.2/dist/css/bootstrap.min.css">
-
-    <%--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>--%>
-    <%--<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>--%>
-    <%--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>--%>
-    <!-- <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css"> -->
-
-    <link rel='shortcut icon' type='image/x-icon' href='http://<%=rootAddress%>/image/favicon.ico'>
-    <link rel="icon" type="image/x-icon" href="http://<%=rootAddress%>/image/favicon.ico">
+    <link rel='shortcut icon' type='image/x-icon' href='https://<%=rootAddress%>/image/favicon.ico'>
+    <link rel="icon" type="image/x-icon" href="https://<%=rootAddress%>/image/favicon.ico">
     <style>
         .fakeimg {
             height: 200px;
@@ -128,7 +122,6 @@
                     <div class="col">
                         <div class="panel-pane pane-epa-core-html-pane">
                             <jsp:include page="/UsepaController" />
-
                         </div>
                     </div>
                     <!-- usepa [Dambi] end -->

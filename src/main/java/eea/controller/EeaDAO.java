@@ -22,7 +22,7 @@ public class EeaDAO {
 	public void getCon() {
 		try {
 			Context ctx = new InitialContext();
-			Context envContext = (Context) ctx.lookup("java:/comp/env");
+			Context envContext = (Context) ctx.lookup("java:comp/env");
 			ds = (DataSource) envContext.lookup("jdbc/pool");
 			con = ds.getConnection();
 		} catch (Exception e) {

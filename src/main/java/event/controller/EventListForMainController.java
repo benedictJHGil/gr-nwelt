@@ -11,8 +11,6 @@ import javax.servlet.http.HttpServletResponse;
 
 import com.google.gson.Gson;
 
-import event.controller.EventVO;
-
 /**
  * Servlet implementation class MemberController
  */
@@ -24,7 +22,6 @@ public class EventListForMainController extends HttpServlet {
 	public void init() throws ServletException {
 		eventDAO = new EventDAO();
 	}
-
 	/**
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
@@ -40,14 +37,17 @@ public class EventListForMainController extends HttpServlet {
 	}
 	
 	private void doHandle(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		request.setCharacterEncoding("utf-8");
 		response.setCharacterEncoding("utf-8");
 		response.setContentType("application/json");
+		// response.addHeader("Access-Control-Allow-Origin", "*");
+		// response.setHeader("Access-Control-Allow-Headers", "origin, x-requested-with, content-type, accept");
 		
 		List<EventVO> eventList = eventDAO.listEventsForMain();
-		request.setAttribute("eventList", eventList);
-		
-	    String gson = new Gson().toJson(eventList);
-	    response.getWriter().write(gson);
+
+	    Gson gson = new Gson();
+	    String jsonString = gson.toJson(eventList);
+	    response.getWriter().write(jsonString);
 	}
 
 }

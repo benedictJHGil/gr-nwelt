@@ -16,8 +16,8 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.js"></script>       <!-- DataTable CDN -->
-  <link rel='shortcut icon' type='image/x-icon' href='http://<%=rootAddress%>/image/favicon.ico'>
-  <link rel="icon" type="image/x-icon" href="http://<%=rootAddress%>/image/favicon.ico">
+  <link rel='shortcut icon' type='image/x-icon' href='https://<%=rootAddress%>/image/favicon.ico'>
+  <link rel="icon" type="image/x-icon" href="https://<%=rootAddress%>/image/favicon.ico">
   
   <script type="text/javascript">
     $(document).ready( function () {        
@@ -26,7 +26,7 @@
     	}
     	
         $("#toEventWrite").click(function(){
-      	  window.location.href="/<%=projectName%>/EventWriteController";
+      	  window.location.href="/EventWriteController";
         });
         
         history.replaceState({}, null, location.pathname);
@@ -35,7 +35,7 @@
   <!-- End of DataTable Initialising -->
   <script type="text/javascript" language="javascript">
 	var rootAddress = "<%=rootAddress%>";
-	var url = "http://" + rootAddress + "/EventListForMainController";
+	var url = "https://" + rootAddress + "/EventListForMainController";
  	
     $(document).ready(function(){
     	
@@ -77,7 +77,7 @@
                     $('tr').click(function(){
                     	//console.log($(this).children().eq(0).text());
                     	//console.log("/testForKmove/EventDetailController?no="+$(this).children().eq(0).text());
-                    	location.href="/<%=projectName%>/EventDetailController?no="+$(this).children().eq(0).text(); // 해당 글 클릭시 해당 글 불러올수있도록 글번호주소지정함
+                    	location.href="/EventDetailController?no="+$(this).children().eq(0).text(); // 해당 글 클릭시 해당 글 불러올수있도록 글번호주소지정함
                     }); //this의 tr을 클릭하면 그 밑의 자식중에서 0번째 즉 no의 text를 가져오기
             }  
         });

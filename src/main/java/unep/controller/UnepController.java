@@ -9,8 +9,6 @@ import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.*;
 
-import com.google.gson.Gson;
-
 @WebServlet("/UnepController")
 public class UnepController extends HttpServlet {
 

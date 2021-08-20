@@ -20,7 +20,7 @@ public class UsepaDAO {
     public void getCon() {
         try {
             Context initctx = new InitialContext();
-            Context envctx = (Context) initctx.lookup("java:/comp/env");
+            Context envctx = (Context) initctx.lookup("java:comp/env");
             ds = (DataSource) envctx.lookup("jdbc/pool");
             con = ds.getConnection();
         } catch (Exception e) {

@@ -4,12 +4,10 @@
 <%-- Include this file to obtain server's root address wherever using ajax!! --%>
 <%@ include file="../rootAddress.jsp" %>
 <%-----------------------------------------------------------------------------%>
-<%--<script src="/webjars/jquery/3.5.1/dist/jquery.min.js"></script>--%>
-<%--<script src="/webjars/bootstrap/4.5.2/dist/js/bootstrap.min.js"></script>--%>
-<script type="text/javascript" language="javascript">
+<script defer type="text/javascript" language="javascript">
 
 	var rootAddress = "<%=rootAddress%>";
-	var url = "http://" + rootAddress + "/EventListForMainController";
+	var url = "https://" + rootAddress + "/EventListForMainController";
 
     $(document).ready(function(){
     	
@@ -22,7 +20,6 @@
             },
             success : function(data){
                 console.log(data);
-                          
                 var length = data.length > 4 ? 4 : data.length;
                 for(i=0; i<length; i++){
                     var datetime = data[i].publishedDate.split(" ");
@@ -103,7 +100,6 @@
     });
 </script>
 
-<%--<link rel="stylesheet" href="/webjars/bootstrap/4.5.2/dist/css/bootstrap.min.css">--%>
 <!-- Event Werbung start -->
   
 <div class="row" id="event">
